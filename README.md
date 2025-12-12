@@ -18,6 +18,10 @@ uv run nasdaq_basic_mlp.py  # trains and prints test metrics
 - Sync project to remote host: `bin/rspec 1.1.1.1:22 /workspace` (`/workspace` is implied/default)
 - SSH into remote host and run: `cd /workspace && uv sync && uv run python nasdaq_basic_mlp.py`
 
+## Docker (GPU)
+- Build: `docker build -t explore-stock-analysis:latest .`
+- Run (NVIDIA): `docker run --rm --gpus all explore-stock-analysis:latest`
+
 ## Notes
 - Adjust train/test splits, learning rate, or epochs in the `NasdaqBasicMLPRunner` constructor.
 - Swap `data/*.csv` or add new ones; filenames map to `load_stock_data("<name>")` without the `.csv` suffix.

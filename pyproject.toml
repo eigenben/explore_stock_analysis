@@ -1,0 +1,7 @@
+[project]
+name = "explore_stock_analysis"
+version = "0.1.0"
+description = "Explore various ML algorithms applied to stock market analysis."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = []
